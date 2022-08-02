@@ -1,16 +1,68 @@
+/*---Google Fonts---*/
 @import url('https://fonts.googleapis.com/css2? family= Roboto+Slab:wght@300 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-.body{
+.body {
     background-color: #f7f4f2;
     font-style: normal;
-    font-weight:lighter ;
-    text-align:justify ;
-    text-decoration:none ;
-    font-family: 'Playfair Display', 'Roboto Slab', serif ;
+    font-weight: lighter;
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Playfair Display', 'Roboto Slab', serif;
     font-size: 15px;
-    vertical-align:bottom ;
+    vertical-align: bottom;
+}
+
+
+/*---menu---*/
+
+.links {
+    display: flex;
+    margin: 5%;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    font-family: 'Roboto Slab', 'Uchen', serif;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    text-align: justify;
+    z-index: 1;
+    background-color: #f7f4f5;
+    box-shadow: 2px 6px 11px -2px #a3a3a3;
+}
+
+.menu-link {
+    box-shadow: 8px 4px 0px -2px #F6EDE0;
+    background-color: #4F2F25;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 7px 9px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 0px 0px 50px #2f6627;
+}
+
+.menu-link:hover {
+    background-color: #F6EDE0;
+    color: #4F2F25;
+}
+
+.menu-link:active {
+    position: relative;
+    top: 1px;
+}
+
+.menu-item {
+    padding-left: 50%;
+    width: 100%;
 }
 
 input#search-bar {
@@ -22,162 +74,152 @@ input#search-bar {
     border: 1px solid #D0CFCE;
     outline: none;
 }
-.menu{
-    display: flex;
-    position: fixed;
-    align-items: center;
-    font-family: 'Roboto Slab','Uchen', serif;
-    font-style: normal;
-    font-weight:normal;
-    vertical-align: baseline;
-    text-align: justify;
-    z-index: 1;
-    background-color: #f7f4f5;
-    box-shadow: 2px 6px 11px -2px #a3a3a3;
+
+.logo {
+
+    border: none
+}
+/*---Fim- do menu---*/
+
+
+
+/*---banner---*/
+
+.img-fluid {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.col-sm{
-    font-family: 'Playfair Display', 'Roboto Slab', serif;
-    font-style: normal;
-    font-weight:normal;
-    vertical-align: baseline;
-    text-align: justify;
-}
+/*---Fim do banner---*/
 
-.categoria-item{
+
+
+/*---categorias---*/
+.categoria-item {
     align-items: center;
-    font-family: 'Roboto Slab','Uchen', serif;
+    font-family: 'Roboto Slab', 'Uchen', serif;
     font-style: initial;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     vertical-align: baseline;
     text-decoration: overline;
-}
-.titulo{
-    text-decoration: underline;
-}
-.img-fluid{
-    margin-top: 110px;
-}
-.social-icon{
-    margin: 20px;
-}
-.footer-icon{
-    margin: 5px;
-}
-.container{
-    display: flex;
-    justify-content: center;
-}
-.menu-item{
-    padding-left: 50%;
-    width: 100%;
-}
-.links {
-    display: flex;
-    margin: 5%;
-}
-
-.logo {
-   
-    border: none
-}
-
-p {
-    margin: 20px;
 }
 
 .img-categorias {
     margin-top: 20%;
     margin-bottom: 2%;
+
     width: 30%;
     border: none;
     border-radius: 50%;
 }
+/*---Final da categoria---*/
 
+
+/*---grid---*/
 .col-sm {
-    padding: 5px ;
+    font-family: 'Playfair Display', 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    text-align: justify;
+    padding: 5px;
     text-align: center;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*--- final do grid---*/
+
+
+
+/*--- Sessao principal---*/
+.titulo {
+    font-family: 'Jost', sans-serif;
+
+}
+
+.figure {
+    margin: 20px;
+}
+
+.myButton {
+    box-shadow: 14px 4px 0px 0px #F6EDE0;
+    background-color: #380D00;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-shadow: 0px 0px 50px #2f6627;
+}
+
+.myButton:hover {
+    background-color: #26201b;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*--- final da Sessao principal---*/
+
+
+
+p {
+    margin: 20px;
+}
+
+.linha {
+    width: 50%;
+    margin-top: 5%;
+    background-color: #380D00;
+}
+
+
+
+.espaco {
+    margin: 50px;
+}
+
+
+/*---footer---*/
 .footer {
     background-color: #4F2F25;
 }
 
+.footer-link {
+    text-decoration: none;
+}
+
 .footer-item {
+    font-weight: lighter;
+    display: flex;
     text-align: center;
     color: white;
     align-items: center;
+    text-align: justify;
     font-style: normal;
-    font-weight:bold;
-    font-family: 'Roboto Slab','Uchen', serif;
-
-
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
 }
 
+/*---Final do footer---*/
 
-.card.img{
-    
-    width: 10px;
-}
 
-.espaco{
-    margin: 50px;
-}
-.figure{
-    margin: 20px;
-}
-.myButton {
-	box-shadow: 14px 4px 0px 0px #F6EDE0;
-	background-color:#380D00;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Roboto Slab', serif;
-	padding:6px 10px;
-	text-decoration:none;
-	text-shadow:0px 0px 50px #2f6627;
-}
-.myButton:hover {
-	background-color:#26201b;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-.menu-link {
-	box-shadow: 8px 4px 0px -2px #F6EDE0;
-	background-color:#4F2F25;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	padding:7px 9px;
-    margin: 10px;
-	text-decoration:none;
-	text-shadow:0px 0px 50px #2f6627;
-}
-.menu-link:hover {
-	background-color:#F6EDE0;
-    color:#4F2F25;
-}
-.menu-link:active {
-	position:relative;
-	top:1px;
-}
-
-        
-
+/*---media querye---*/
 /*@media (min-width: 576px) {  }
 
 @media (min-width: 768px) {  }*/
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {}
 
-}
-
-@media (min-width: 1200px) {
-    
-}
+@media (min-width: 1200px) {}
