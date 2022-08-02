@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Slab:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
 .body{
     background-color: #f7f4f2;
+    font-style: normal;
+    font-weight:lighter ;
+    text-align:justify ;
+    text-decoration:none ;
+    font-family: 'Playfair Display', 'Roboto Slab', serif ;
+    font-size: 15px;
+    vertical-align:bottom ;
 }
 
 input#search-bar {
@@ -15,11 +26,39 @@ input#search-bar {
     display: flex;
     position: fixed;
     align-items: center;
+    font-family: 'Roboto Slab','Uchen', serif;
+    font-style: normal;
+    font-weight:normal;
+    vertical-align: baseline;
+    text-align: justify;
     z-index: 1;
     background-color: #f7f4f5;
     box-shadow: 2px 6px 11px -2px #a3a3a3;
 }
 
+.col-sm{
+    font-family: 'Playfair Display', 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight:normal;
+    vertical-align: baseline;
+    text-align: justify;
+}
+
+.categoria-item{
+    align-items: center;
+    font-family: 'Roboto Slab','Uchen', serif;
+    font-style: initial;
+    font-weight:bold;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: overline;
+}
+.titulo{
+    text-decoration: underline;
+}
+.img-fluid{
+    margin-top: 110px;
+}
 .social-icon{
     margin: 20px;
 }
@@ -65,9 +104,15 @@ p {
     background-color: #4F2F25;
 }
 
-.cor {
+.footer-item {
     text-align: center;
     color: white;
+    align-items: center;
+    font-style: normal;
+    font-weight:bold;
+    font-family: 'Roboto Slab','Uchen', serif;
+
+
 }
 
 
@@ -89,9 +134,7 @@ p {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	font-style:italic;
+	font-family: 'Roboto Slab', serif;
 	padding:6px 10px;
 	text-decoration:none;
 	text-shadow:0px 0px 50px #2f6627;
@@ -111,9 +154,6 @@ p {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:14px;
-	font-style:italic;
 	padding:7px 9px;
     margin: 10px;
 	text-decoration:none;
