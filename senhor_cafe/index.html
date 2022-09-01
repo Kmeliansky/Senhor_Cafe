@@ -6,46 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Blog - cafe cuesta</title>
+    <title>Senhor café</title>
 </head>
 
 <body class="body">
     <header class="header">
         <!--Menu-->
         <nav>
-            <div class="container">
-                <div class="row menu">
+            <div class="">
+                <div class="menu">
 
                     <div class="col-sm">
-                        <img src="image/img-cafe-removebg-preview.png" alt="cafe da cuesta" class="logo" width="30%">
+                        <a href="#"><img
+                                src="image/586035-coffee-logo-template-icone-de-grátis-vetor-removebg-preview 1.svg"
+                                alt="cafe da cuesta" class="logo" width="200px"></a>
                     </div>
 
                     <div class="col-sm">
-                        <input type="text" id="search-bar" placeholder="PESQUISE AQUI">
+                        <div class="container-search">  
+                            <input class="search" type="search" id="busca" name="q" placeholder="Faça a sua busca aqui">
+                            <button class="submit" type="submit"><img class="pesquisa-img" src="image/pesquisa 1.svg" alt="search" width="100px" height="50px"> </button>
+                          </div>
+                        
                     </div>
 
                     <div class="col-sm">
-                        <div class="links">
-                            <a href="#" class="menu-link">Produtos</a>
-
-                            <a href="#" class="menu-link">Café</a>
-
-                            <a href="#" class="menu-link">Variedades</a>
-
-                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"> <img src="image/person_FILL0_wght400_GRAD0_opsz48 1.svg" alt="imagem para login"> <br> Olá, bem vindo <br> Cadastrar/logar</button>
+                            <div class="dropdown-content">
+                            <a href="#">Entrar</a>
+                            <a href="#">Cadastrar</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-sm">
-                        Minha conta
-                    </div>
-                    <div class="col-sm">
-                        <img src="image/icons8-facebook-novo (1).svg" alt="..." class="social-icon">
-                        <img src="image/icons8-instagram.svg" alt="..." class="social-icon">
-                        <img src="image/icons8-whatsapp.svg" alt="..." class="social-icon">
-                    </div>
+
+
                 </div>
             </div>
+            </div>
+        </nav>
+
+        <nav>
+            <li class="nav">
+                <ul class="nav-item">HISTÓRIA</ul>
+                <ul class="nav-item">NOSSO CAFÉ</ul>
+                <ul class="nav-item">COFFE TOUR</ul>
+                <ul class="nav-item">CURSOS</ul>
+                <ul class="nav-item">NOSSA FAZENDA</ul>
+            </li>
         </nav>
     </header>
 
@@ -53,8 +64,33 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md">
-                    <img src="image/cafe-cuesta.jpg" class="img-fluid" alt="Imagem responsiva">
+                <div class="">
+                    <div id="carouselExampleControls" class="carousel slide img-fluid img-banner" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="image/home-cafe_files/01.NOSSA-FAZENDA.jpg"
+                                    alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="image/home-cafe_files/04.COFFEE-TOUR.png"
+                                    alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="image/home-cafe_files/03.NOSSA-LOJA.png"
+                                    alt="Terceiro Slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,22 +102,54 @@
 
             <div class="row">
 
-                <div class="col-sm">
+                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="cafe moido" class="img-categorias">
                     <p class="categoria-item">CAFÉ MOIDO</p>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <p>jshdiuvidvhiudvbiudviudvbiduiudvdivgufdvwfip</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-sm">
+                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt=" cafe arabico" class="img-categorias">
                     <p class="categoria-item">CAFÉ ARABICO</p>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                ...
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="capsulas de cafe" class="img-categorias">
                     <p class="categoria-item"> CAPSULAS DE CAFÉ</p>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <p>jshdi</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="cafe em po" class="img-categorias">
                     <p class="categoria-item">CAFÉ EM PÓ</p>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <p>jshdiuvidvhiudvbiudviudvbiduiudvdivgufdvwfip</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -89,13 +157,13 @@
     </section>
 
     <div class="espaco"></div>
- <hr class="linha">
+    <hr class="linha">
     <!--sessão principal-->
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h1 class="titulo">VENHA CONHECER NOSSA LOJA</h1>
+                    <h1 class="titulo">VENHA CONHECER NOSSA ESPAÇO</h1>
                     <p>A Loja do Cuesta Cafés Especiais localiza-se em uma das paisagens mais bonitas do Brasil,
                         conhecida como Cuesta de Botucatu, mais especificamente no Alto Cuesta, a cerca de 200km da
                         capital, São Paulo.
@@ -160,124 +228,107 @@
                 </div>
             </div>
         </div>
+
         <hr class="linha">
         <div class="espaco"></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <figure class="figure">
-                        <img src="image/home-cafe_files/2.COLHEITA.jpg" class="figure-img img-fluid rounded"
-                            alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure." width="100%">
-                        <figcaption class="figure-caption">Lorem Ipsum é simplesmente um texto fictício da indústria
-                            tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde
-                            os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a
-                            para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas
-                            também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi
-                            popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
-                            Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus
-                            PageMaker, incluindo versões de Lorem Ipsum.</figcaption>
-                        <a href="#" class="myButton">VER MAIS</a>
-                    </figure>
+        <div class="container-img">
+            <p class="maps-descricao">NOSSO CAFÉ</p>
+            <p>Composto de grãos nobres, selecionados artesanalmente, nossos cafés especiais podem ser apreciados em três diferentes tipos: Bourbon, Cereja e Jasmim, além do exclusivo Microlote.</p>
+            <div class="row-1">
+                <div class="col1">
+                    <div class="img-cafe">
+                        <img class="img-cafe-1" src="image/home-cafe_files/cafe-microlotes.png" alt="">
+                        <p class="descricao-cafe">
+                            - 100% Natural <br>
+                            - Graos selecionados <br>
+                            - Baixa acidez <br>
+
+                        </p>
+                    </div>
                 </div>
-                <div class="col">
-                    <figure class="figure">
-                        <img src="image/home-cafe_files/1.PLANTIO.jpg" class="figure-img img-fluid rounded"
-                            alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure." width="100%">
-                        <figcaption class="figure-caption">Lorem Ipsum é simplesmente um texto fictício da indústria
-                            tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde
-                            os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a
-                            para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas
-                            também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi
-                            popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
-                            Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus
-                            PageMaker, incluindo versões de Lorem Ipsum.</figcaption>
-                        <a href="#" class="myButton">VER MAIS</a>
-                    </figure>
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <figure class="figure">
-                        <img src="image/home-cafe_files/02.MAIS-VENDIDOS.png" class="figure-img img-fluid rounded"
-                            alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure." width="100%">
-                        <figcaption class="figure-caption">Lorem Ipsum é simplesmente um texto fictício da indústria
-                            tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde
-                            os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a
-                            para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas
-                            também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi
-                            popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
-                            Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus
-                            PageMaker, incluindo versões de Lorem Ipsum.</figcaption>
-                        <a href="#" class="myButton">VER MAIS</a>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="figure">
-                        <img src="image/home-cafe_files/04.COFFEE-TOUR.png" class="figure-img img-fluid rounded"
-                            alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure." width="100%">
-                        <figcaption class="figure-caption">Lorem Ipsum é simplesmente um texto fictício da indústria
-                            tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde
-                            os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a
-                            para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas
-                            também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi
-                            popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
-                            Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus
-                            PageMaker, incluindo versões de Lorem Ipsum.</figcaption>
-                        <a href="#" class="myButton">VER MAIS</a>
-                    </figure>
+                <div class="col2-cafe">
+                    <div class="cafe-item">
+                        <img class="col2-img" src="image/home-cafe_files/cafe-bourbon.png" alt="">
+                        <p class="descricao-cafe">
+                            - 100% Natural <br>
+                            - Graos selecionados <br>
+                            - Baixa acidez <br>
+                        </p>
+                    </div>
+                    <div class="cafe-item"> 
+                        <img class="col2-img" src="image/home-cafe_files/cafe-cereja.png" alt="">
+                        <p class="descricao-cafe">
+                            - 100% Natural <br>
+                            - Graos selecionados <br>
+                            - Baixa acidez <br>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-    <hr class="linha">
-    <div class="espaco"></div>
 
-    <!--rodape da pagina-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col">
-                    <p class="lead footer-item">
-                        INSTITUCIONAL
-                    </p>
-                    <p class="cor footer-item">
-                        <u class="footer-link">Sobre nos.</u>
-                    </p>
-                    <p class="cor footer-item">
-                        <u class="footer-link">Redes sociais.</u>
-                    </p>
-                    <p class="cor footer-item">
-                        <u class="footer-link">SAC.</u>
-                    </p>
-                </div>
+        <hr class="linha">
+        <div class="espaco"></div>
 
-                <div class="col">
-                    <p class="lead footer-item">
-                        DUVIDAS
-                    </p>
-                    <p class="footer-item">
-                        <u class="footer-link">forma de pagamento</u>
-                    </p>
-                    <p class="footer-item">
-                        <u class="footer-link">Formas de entrega</u>
-                    </p>
-                    <p class="footer-item">
-                        <u class="footer-link">Politica de reembolso</u>
-                    </p>
-                </div>
-                <div class="col cor">
-                    <p class="lead footer-item">
-                        REDES SOCIAIS
-                        <div>
-                        <img src="image/icons8-facebook-novo (1).svg" alt="..." class="social-icon">
-                        <img src="image/icons8-instagram.svg" alt="..." class="social-icon">
-                        <img src="image/icons8-whatsapp.svg" alt="..." class="social-icon">
-                        </div>
-                    </p>
-                </div>
-            </div>
+        <div class="newlleter">
+            <h2 class="new-item">NEWSLETTER</h2>
+            <p class="new-item">Cadastre-se para ficar por dentro das novidades do clube, <br> cafes especiais e muito
+                mais da nossa
+                fazenda</p>
+            <input type="text" id="search-bar" placeholder="PESQUISE AQUI">
         </div>
-    </footer>
+
+        <div class="container-maps">
+            <p class="maps-descricao"><a class="a" href="https://goo.gl/maps/YWsURLLbJMXGfmRG8">COMO CHEGAR:</a></p>
+            <iframe class="google-maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.565124736586!2d-48.404848684334695!3d-23.113010051074344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6c1e142d75fd5%3A0x1b8f89808375b1df!2sCuesta%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1661449703614!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="linha">
+        <div class="espaco"></div>
+
+        <!--rodape da pagina-->
+        <footer class="footer">
+
+            <div class="contato">
+                <h2 class="footer-titulo">CONTATOS</h2>
+                <p class="footer-descricao"><a class="a-f" href="">(14)3422-3247</a></p>
+                <p class="footer-descricao"><a class="a-f" href="">ATENDIMENTOCUESTA.COM.BR</a></p>
+            </div>
+
+            <div class="institucional">
+                <H2 class="footer-titulo">INSTITUCIONAL</h2>
+                <p class="footer-descricao"><a class="a-f" href="http://">QUEM SOMOS</a></p>
+            </div>
+
+            <div class="suporte">
+                <h2 class="footer-titulo">SUPORTE</h2>
+                <p class="footer-descricao"><a class="a-f" href="">PERGUNTAS FREQUÊNTES</a></p>
+            </div>
+
+            <div class="politicas">
+                <h2 class="footer-titulo">POLITICAS</h2>
+                <p class="footer-descricao"><a class="a-f" href="http://">POLITICA DE PRIVACIDADE</a></p>
+                <p class="footer-descricao"><a class="a-f" href="http://">TERMOS DE CONSENTIMENTO</a></p>
+                <p class="footer-descricao"><a class="a-f" href="http://">ENTREGA E FRETE</a></p>
+                <p class="footer-descricao"><a class="a-f" href="http://">SEGURANÇA</a></p>
+            </div>
+
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
