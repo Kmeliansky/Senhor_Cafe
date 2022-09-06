@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Senhor café</title>
@@ -35,31 +38,36 @@
 
                     <div class="col-sm">
                         <div class="dropdown">
-                            <button class="dropbtn"> <img src="image/person_FILL0_wght400_GRAD0_opsz48 1.svg" alt="imagem para login"> <br> Olá, bem vindo <br> Cadastrar/logar</button>
+                            <button class="dropbtn"> <img src="image/person_FILL0_wght400_GRAD0_opsz48 1.svg" alt="imagem para login"> <br> Seja bem-vindo <br> <u> Cadastrar/logar</u></button>
                             <div class="dropdown-content">
-                            <a href="#">Entrar</a>
-                            <a href="#">Cadastrar</a>
+                             <a class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Entrar</a>
+                             <a href="formulario.html">Cadastrar</a>
                             </div>
-                          </div>
-                    </div>
-
 
                 </div>
             </div>
             </div>
         </nav>
 
-        <nav>
-            <li class="nav">
-                <ul class="nav-item">HISTÓRIA</ul>
-                <ul class="nav-item">NOSSO CAFÉ</ul>
-                <ul class="nav-item">COFFE TOUR</ul>
-                <ul class="nav-item">CURSOS</ul>
-                <ul class="nav-item">NOSSA FAZENDA</ul>
-            </li>
-        </nav>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form class="formulario">
+                    <h1>PREENCHA NOSSO FORMULÁRIO</h1>
+                    <label for="name">Nome Completo</label>
+                    <input onclick="nome()" type="text" id="name" placeholder="nome aqui">
+                    <hr>
+                    <label for="example-email">E-mail</label>
+                    <input onclick="email()" type="email" id="e-mail" placeholder="example123@gmail.com">
+                    <hr>         
+                    <input class="btn-success" type="submit" value="Entrar"> 
+                  </form>
+            </div>
+        </div>
+        
     </header>
-
+    
     <!--Banner-->
     <section>
         <div class="container">
@@ -104,51 +112,24 @@
 
                 <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="cafe moido" class="img-categorias">
-                    <p class="categoria-item">CAFÉ MOIDO</p>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <p>jshdiuvidvhiudvbiudviudvbiduiudvdivgufdvwfip</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="categoria-item">CAFÉ MOÍDO</p>
+                    
                 </div>
 
                 <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt=" cafe arabico" class="img-categorias">
-                    <p class="categoria-item">CAFÉ ARABICO</p>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                ...
-                            </div>
-                        </div>
-                    </div>
+                    <p class="categoria-item">CAFÉ ARÁBICO</p>
+                    
                 </div>
                 <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="capsulas de cafe" class="img-categorias">
-                    <p class="categoria-item"> CAPSULAS DE CAFÉ</p>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <p>jshdi</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="categoria-item"> CÁPSULAS DE CAFÉ</p>
+                   
                 </div>
                 <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <img src="image/cafe-moido.png" alt="cafe em po" class="img-categorias">
                     <p class="categoria-item">CAFÉ EM PÓ</p>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <p>jshdiuvidvhiudvbiudviudvbiduiudvdivgufdvwfip</p>
-                            </div>
-                        </div>
+                  
                     </div>
 
                 </div>
@@ -163,8 +144,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h1 class="titulo">VENHA CONHECER NOSSA ESPAÇO</h1>
-                    <p>A Loja do Cuesta Cafés Especiais localiza-se em uma das paisagens mais bonitas do Brasil,
+                    <h1 class="titulo">VENHA CONHECER NOSSO ESPAÇO</h1>
+                    <p class="descricao">A Loja do Cuesta Cafés Especiais localiza-se em uma das paisagens mais bonitas do Brasil,
                         conhecida como Cuesta de Botucatu, mais especificamente no Alto Cuesta, a cerca de 200km da
                         capital, São Paulo.
 
@@ -252,7 +233,7 @@
                         <img class="col2-img" src="image/home-cafe_files/cafe-bourbon.png" alt="">
                         <p class="descricao-cafe">
                             - 100% Natural <br>
-                            - Graos selecionados <br>
+                            - Grãos selecionados <br>
                             - Baixa acidez <br>
                         </p>
                     </div>
@@ -260,7 +241,7 @@
                         <img class="col2-img" src="image/home-cafe_files/cafe-cereja.png" alt="">
                         <p class="descricao-cafe">
                             - 100% Natural <br>
-                            - Graos selecionados <br>
+                            - Grãos selecionados <br>
                             - Baixa acidez <br>
                         </p>
                     </div>
@@ -273,7 +254,7 @@
 
         <div class="newlleter">
             <h2 class="new-item">NEWSLETTER</h2>
-            <p class="new-item">Cadastre-se para ficar por dentro das novidades do clube, <br> cafes especiais e muito
+            <p class="new-item">Cadastre-se para ficar por dentro das novidades do clube, <br> cafés especiais e muito
                 mais da nossa
                 fazenda</p>
             <input type="text" id="search-bar" placeholder="PESQUISE AQUI">
@@ -295,8 +276,8 @@
 
             <div class="contato">
                 <h2 class="footer-titulo">CONTATOS</h2>
-                <p class="footer-descricao"><a class="a-f" href="">(14)3422-3247</a></p>
                 <p class="footer-descricao"><a class="a-f" href="">ATENDIMENTOCUESTA.COM.BR</a></p>
+                <p class="footer-descricao"><a class="a-f" href="">(14)3422-3247</a></p>
             </div>
 
             <div class="institucional">
@@ -310,8 +291,8 @@
             </div>
 
             <div class="politicas">
-                <h2 class="footer-titulo">POLITICAS</h2>
-                <p class="footer-descricao"><a class="a-f" href="http://">POLITICA DE PRIVACIDADE</a></p>
+                <h2 class="footer-titulo">POLÍTICAS</h2>
+                <p class="footer-descricao"><a class="a-f" href="http://">POLÍTICA DE PRIVACIDADE</a></p>
                 <p class="footer-descricao"><a class="a-f" href="http://">TERMOS DE CONSENTIMENTO</a></p>
                 <p class="footer-descricao"><a class="a-f" href="http://">ENTREGA E FRETE</a></p>
                 <p class="footer-descricao"><a class="a-f" href="http://">SEGURANÇA</a></p>
