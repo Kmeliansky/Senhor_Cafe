@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btt{
+    width: 100%;
+}
+.container-autoriza{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    
+    margin: auto;
+    border: 1px;
+    border-radius: 5px;
+}
