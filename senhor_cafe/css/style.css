@@ -6,8 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 :root {
     --corprincipal: #9D7C68;
     --corsecundaria: #380D00;
@@ -63,14 +61,6 @@
 .col2-img {
     width: 25%;
 }
-
-.cafe-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .descricao-cafe {
     font-size: 30px;
     text-align: right;
@@ -87,8 +77,12 @@
 
 .cafe-item {
     background-color: #ff7f00;
-    margin: auto;
+    margin: 10px auto;
     width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .col2-cafe {
@@ -202,7 +196,11 @@ input#search-bar {
     display: flex;
     justify-content: center;
 }
-
+.descricao{
+        text-align: center;
+        font-family: 'Lexend Zetta', sans-serif;
+        font-size: 18px;
+}
 
 /*--- final do grid---*/
 
@@ -277,19 +275,24 @@ p {
 .institucional,
 .suporte,
 .politicas {
-    margin: 30px;
+    margin: 20px;
 }
 
 .footer-titulo {
-    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-family: 'Lexend Zetta', sans-serif;
     text-decoration: underline;
+    
 }
 
 .footer-descricao,
 .a {
+    text-align: center;
+    font-family: 'Lexend Zetta', sans-serif;
     margin: 20px;
     text-decoration: none;
     font-style: none;
+   font-size: 10px;
     color: var(--corsecundaria);
 }
 
@@ -328,7 +331,10 @@ p {
 .new-item {
     font-family: 'Alatsi', sans-serif;
     font-weight: bolder;
-    margin: 50px;
+    margin: 15px;
+    text-align: justify;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 18px;
 }
 
 #search-bar {
@@ -358,7 +364,9 @@ p {
 }
 
 p {
-    font-size: 20px;
+        text-align: center;
+        font-family: 'Lexend Zetta', sans-serif;
+        font-size: 18px;
 }
 
 .a-f {
@@ -426,7 +434,7 @@ p {
 
     .cafe-item {
         background-color: #ff7f00;
-        margin: auto;
+        margin: 10px auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -434,6 +442,11 @@ p {
         width: 70%;
     }
 
+   
+.descricao-cafe{
+    text-align: center;
+    font-size: 20px;
+}
     .col2-cafe {
         padding: 5px;
         display: flex;
@@ -444,9 +457,15 @@ p {
     .newlleter{
         display: flex;
         flex-direction: column;
-        margin: auto;
+        text-align: center;
+        
     }
-
+.new-item{
+    text-align: center;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+}
     .dropdown{
         display: none;
     }
@@ -459,6 +478,26 @@ p {
         
         width: 30%;
     }
+    .menu{
+        display: none;
+    }
+    .footer-titulo, .footer-descricao{
+        text-align: center;
+        font-family: 'Lexend Zetta', sans-serif;
+        font-size: 18px;
+    }
+
+    .img-categorias{
+        width: 15%;
+    }
+    .categoria-item{
+        text-align: center;
+        font-family: 'Lexend Zetta', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    
 }
 
 @media (max-width: 767.98px) {}
