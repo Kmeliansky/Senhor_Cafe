@@ -1,507 +1,372 @@
-/*---Google Fonts---*/
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --corprincipal: #9D7C68;
-    --corsecundaria: #380D00;
-    --corbody: #F6EDE0;
-    --cormenu: #CEAF96;
-    --corbranca: white;
 
-
+.body{
+  background-color: #F6EDE0;
 }
-.formulario{
-    text-align: center;
-    font-family: 'Lexend Zetta', sans-serif;
+
+/* header*/
+.header{
     display: flex;
-    margin: auto;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    padding: 10%;
-}
-.container-search {
-    margin: auto;
-}
-
-.submit {
-    border: none;
-    border-radius: 10px;
-    background-color: #9D7C68;
-}
-
-.submit :hover {
-    border: solid #f9f9f9;
-    border-radius: 10px;
-    background-color: #F6EDE0;
-    width: 150px;
-    height: 50px;
-}
-
-.body {
-    background-color: var(--corbody);
-    font-style: normal;
-    font-weight: lighter;
-    text-align: justify;
-    text-decoration: none;
-    font-family: var(--font-secundaria);
-    font-size: 15px;
-    vertical-align: bottom;
-}
-
-.img-cafe-1 {
-    width: 20%;
-}
-
-.col2-img {
-    width: 25%;
-}
-.descricao-cafe {
-    font-size: 30px;
-    text-align: right;
-}
-
-.img-cafe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     width: 100%;
-    background-color: #5C4033;
-}
-
-.cafe-item {
-    background-color: #ff7f00;
-    margin: 10px auto;
-    width: 48%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 100px;
     align-items: center;
-}
-
-.col2-cafe {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.search {
-    width: 222px;
-    height: 49px;
-    border: none;
-    border-radius: 10px;
-}
-
-/*---menu---*/
-
-.links {
-    display: flex;
-    margin: 5%;
-}
-
-.menu {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    font-family: var(--font-menu);
-    font-style: normal;
-    font-weight: normal;
-    vertical-align: baseline;
-    text-align: justify;
-    z-index: 1;
-    background-color: var(--cormenu);
-}
-
-.menu-item {
-    padding-left: 50%;
-    width: 100%;
-}
-
-input#search-bar {
-    margin: 0 auto;
-    width: 100%;
-    height: 45px;
-
-    font-size: 1rem;
-    border: 1px solid #D0CFCE;
-    outline: none;
-}
-
-.logo {
-    border: none
-}
-
-/*---Fim- do menu---*/
-
-
-
-/*---banner---*/
-
-.img-banner {
-    margin-top: 20%;
-    width: 100%;
-}
-
-/*---Fim do banner---*/
-
-
-
-/*---categorias---*/
-.categoria-item {
-    align-items: center;
-    font-family: var(--font-secundaria);
-    font-style: initial;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px;
-    vertical-align: baseline;
-    text-decoration: overline;
-}
-
-.img-categorias:hover {
-    width: 40%;
-    transition: 5ms;
-}
-
-.img-categorias {
-    margin-top: 20%;
-    border: #2f6627;
-    width: 30%;
-    border: 4px;
-    border-radius: 50%;
-}
-
-/*---Final da categoria---*/
-
-
-/*---grid---*/
-.col-sm {
-    font-family: var(--font-secundaria);
-    font-style: normal;
-    font-weight: normal;
-    vertical-align: baseline;
-    text-align: justify;
-    padding: 5px;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-.descricao{
-        text-align: center;
-        font-family: 'Lexend Zetta', sans-serif;
-        font-size: 18px;
-}
-
-/*--- final do grid---*/
-
-
-
-/*--- Sessao principal---*/
-.titulo {
-    font-family: 'Lexend Zetta', sans-serif;
-    font-size: 40px;
-}
-
-.figure {
-    margin: 20px;
-}
-
-.myButton {
-    box-shadow: 14px 4px 0px 0px #F6EDE0;
-    background-color: var(--corsecundaria);
-    border-radius: 8px;
-    display: inline-block;
-    cursor: pointer;
-    color: var(--cormenu);
-    font-family: var(--font-principal);
-    padding: 6px 10px;
-    text-decoration: none;
-    text-shadow: 0px 0px 50px #2f6627;
-}
-
-.myButton:hover {
-    text-decoration: none;
-    color: var(--corbody);
-    background: rgb(126, 106, 30);
-    background: linear-gradient(0deg, rgba(126, 106, 30, 1) 0%, rgba(92, 57, 9, 1) 100%);
-}
-
-.myButton:active {
-    position: relative;
-    top: 1px;
-}
-
-
-/*--- final da Sessao principal---*/
-
-
-
-p {
-    margin: 20px;
-}
-
-.linha {
-    width: 50%;
-    margin: 5% auto;
-    background-color: var(--c);
-}
-
-
-
-.espaco {
-    margin: 50px;
-}
-
-
-/*---footer---*/
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--corprincipal);
-}
-
-.contato,
-.institucional,
-.suporte,
-.politicas {
-    margin: 20px;
-}
-
-.footer-titulo {
-    text-align: center;
-    font-family: 'Lexend Zetta', sans-serif;
-    text-decoration: underline;
-    
-}
-
-.footer-descricao,
-.a {
-    text-align: center;
-    font-family: 'Lexend Zetta', sans-serif;
-    margin: 20px;
-    text-decoration: none;
-    font-style: none;
-   font-size: 10px;
-    color: var(--corsecundaria);
-}
-
-.container-img {
-    text-align: center;
-    margin: auto;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--corbranca);
-}
-
-.footer-item {
-    font-weight: lighter;
-    display: flex;
-    text-align: center;
-    color: var(--corbranca);
-    align-items: center;
-    text-align: justify;
-    font-style: normal;
-    font-weight: bold;
-    font-family: var(--font-principal);
-}
-
-.newlleter {
-    padding: 50px;
-    margin: 5% 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #9D7C68;
     justify-content: space-around;
+    background-color: #CEAF96;
+}
+.menu{
+    display: flex;
+    justify-content: center;
 }
 
-.new-item {
-    font-family: 'Alatsi', sans-serif;
-    font-weight: bolder;
-    margin: 15px;
-    text-align: justify;
-    font-family: 'Lexend Zetta', sans-serif;
-    font-size: 18px;
-}
-
-#search-bar {
-    width: 50%;
-}
-
-.img-main {
-    margin: auto;
-    width: 100%;
-}
-
-.google-maps {
-    width: 100%;
-    height: 500px;
-    margin: auto;
-}
-
-.maps-descricao {
-    text-align: center;
-    text-decoration: underline;
+.menu-item{
+    color: #F6EDE0;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
     font-size: 20px;
-}
-
-.a {
-    text-decoration: none;
-    color: var(--corprincipal);
-}
-
-p {
-        text-align: center;
-        font-family: 'Lexend Zetta', sans-serif;
-        font-size: 18px;
-}
-
-.a-f {
-    text-decoration: none;
-    color: var(--corsecundaria);
-}
-
-.dropbtn {
-    background-color: #4caf4f00;
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    margin: 25px;
     cursor: pointer;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+.menu-item:hover{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.promocoes{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #2B4928;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.logo-item{
+width: 200px;
 }
 
-.dropdown-content a:hover {
-    background-color: var(--corbody)
+.header-mobile{
+  display: none;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+
+/* banner */
+.banner{
+  text-align: center;
+}
+.banner-img{
+  margin-top: 20px;
+  width: 95%;
+  height: 800px;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: var(--corprincipal);
+/* storys */
+
+.story{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
-/*---Final do footer---*/
+.story-item{
+  margin: 5% 5%;
+  border: solid 5px #CEAF96;
+  border-radius: 200px;
+  width: 120px;
+  height: 120px; 
+}
 
 
-/*---media querye---*/
-@media (max-width: 575.98px) {
-    .img-cafe {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding: 5px;
-        background-color: #5C4033;
+
+/* historia */
+
+.historia{
+  
+  background-color: rgba(206, 175, 150, 0.58);
+}
+
+.historia-descricao{
+  color: rgba(66, 33, 25, 1);
+  font-size: 20px;
+  text-align: center;
+  margin: auto 9%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.historia-titulo{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(66, 33, 25, 1);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-historia{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-descricao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.historia-item{
+  margin: 30px 10px;
+}
+
+.item-container{
+  display: flex;
+ justify-content: space-around;
+ color: rgba(66, 33, 25, 1);
+ font-weight: bolder;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nosso café */
+
+.banner-nosso-cafe{
+  margin: auto;
+}
+.nosso-cafe{
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(206, 175, 150, 0.58) ;
+}
+
+.nosso-cafe-descricao{
+  color: rgba(66, 33, 25, 1);
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nosso-cafe-titulo{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(66, 33, 25, 1);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nosso-cafe-container{
+  display: flex;
+  justify-content: center;
+}
+.container-cafe{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.img-cafe{
+  margin: 30px;
+}
+
+/* coffe-tour */
+.coffe-tour{
+  padding: 3%;
+  background-color: rgba(206, 175, 150, 0.58) ;
+}
+.coffe-tour-2{
+  display: flex;
+  justify-content: center;
+}
+.video{
+  margin: auto 20px;
+
+}
+
+.video-lista{
+  display: flex;
+  flex-direction: row;
+  margin: auto 20px;
+  justify-content: space-between;
+}
+
+.vantagens-container{
+  text-align: center;
+  color: rgba(66, 33, 25, 1);
+  background: rgba(206, 175, 150, 0.47);
+box-shadow: 10px 5px 4px #000000;
+border-radius: 25px;
+}
+
+.button-vantagens{
+  background-color: #2B4928;
+  color: white;
+ border: none;
+ border-radius: 10px; 
+ width: 30%;
+}
+
+.item-lista{
+  margin: 20px 10px;
+}
+
+.container-descricao{
+  color: rgba(66, 33, 25, 1);
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cursos */
+
+.cursos{
+  margin: 10% auto;
+  background-color: rgba(206, 175, 150, 0.58) ;
+}
+.curso-img{
+  display: flex;
+  justify-content: center;
+}
+
+.item-curso{
+  text-align: center;
+  width: 35%;
+  height: 500px;
+  margin: auto;
+}
+
+.curso-titulo{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(66, 33, 25, 1);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.curso-descricao{
+  color: rgba(66, 33, 25, 1);
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nossa fazenda */
+
+.nossa-fazenda{
+  text-align: center;
+  margin: 10% auto;
+  background-color: rgba(206, 175, 150, 0.58) ;
+}
+
+.fazenda-img{
+  width: 90%;
+  height: 500px;
+  margin: 5% auto;
+}
+
+.fazenda-titulo{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(66, 33, 25, 1);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fazenda-descricao{
+  color: rgba(66, 33, 25, 1);
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* newlleter */
+
+.newlleter{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #9D7C68 ;
+}
+
+.bt-new{
+  width: 15%;
+  border: none;
+  border-radius: 10px;
+  background-color: #c7ad9d;
+  color:  #F6EDE0 ;
+}
+.newsletter-titulo{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.newsletter-descricao{
+  font-size: 16px;
+  width: 20%;
+}
+#newsletter{
+  border: none;
+  border-radius: 8px;
+  width: 28%;
+  height: 50px;
+}
+
+/*maps*/
+.maps-titulo{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(66, 33, 25, 1);
+  font-weight: 600;
+  margin-top: 5%;
+  font-size: 20px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.maps{
+  width: 100%;
+  height: 500px;
+}
+/* footer */
+
+.footer{
+  background-color: #CEAF96;
+}
+
+
+
+/* responsividade */
+
+@media only screen and (max-width:900px){
+
+    .header{
+        background-color: #CEAF96;
     }
 
-    .cafe-item {
-        background-color: #ff7f00;
-        margin: 10px auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: solid  #a15101;
-        width: 70%;
-    }
-
-   
-.descricao-cafe{
-    text-align: center;
-    font-size: 20px;
-}
-    .col2-cafe {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .newlleter{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-.new-item{
-    text-align: center;
-    font-family: 'Lexend Zetta', sans-serif;
-    font-size: 18px;
-    display: inline-block;
-}
-    .dropdown{
+    .menu{
         display: none;
     }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
+
+    .dropbtn{
+        display: none;
+    }
+    .header-mobile{
+      display: inline-block;
     }
     .logo{
-        
-        width: 30%;
-    }
-    .menu{
         display: none;
+        width: 100px;
     }
-    .footer-titulo, .footer-descricao{
-        text-align: center;
-        font-family: 'Lexend Zetta', sans-serif;
-        font-size: 18px;
-    }
-
-    .img-categorias{
-        width: 15%;
-    }
-    .categoria-item{
-        text-align: center;
-        font-family: 'Lexend Zetta', sans-serif;
-        font-size: 18px;
-        text-decoration: none;
-    }
-
-    
 }
-
-@media (max-width: 767.98px) {}
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 1199.98px) {}

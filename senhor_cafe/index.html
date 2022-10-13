@@ -1,330 +1,258 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="image/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Senhor café</title>
+    <script src="js/index.js"></script>
+    <title>Senhor Cafe</title>
 </head>
 
 <body class="body">
+    <div class="promocoes">
+        <p>ADQUIRA O NOSSO CURSO E GANHE 15% DE DESCONTO EM NOSSOS PRODUTOS</p>
+    </div>
+
     <header class="header">
-        <!--Menu-->
-        <nav>
-                <div class="menu">
-                    <div class="col-sm">
-                        <a href="#"><img
-                                src="image/586035-coffee-logo-template-icone-de-grátis-vetor-removebg-preview 1.svg"
-                                alt="cafe da cuesta" class="logo" width="200px"></a>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="container-search">
-                            <input class="search" type="search" id="busca" name="q" placeholder="Faça a sua busca aqui">
-                            <button class="submit" type="submit"><img class="pesquisa-img" src="image/pesquisa 1.svg"
-                                    alt="search" width="100px" height="50px"> </button>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="dropdown">
-                            <button class="dropbtn"> <img src="image/person_FILL0_wght400_GRAD0_opsz48 1.svg"
-                                    alt="imagem para login"> <br> Seja bem-vindo <br> <u> Cadastrar/logar</u></button>
-                            <div class="dropdown-content">
-                                <a class="col-sm" type="button" data-toggle="modal"
-                                    data-target=".bd-example-modal-lg">Entrar</a>
-                                <a href="formulario.html">Cadastrar</a>
-                            </div>
-
-                        </div>
-                    </div>
-        </nav>
-
-        <ul id="menu-hamburguer">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-          </ul>
+        <p class="header-mobile">
+            SENHOR CAFÉ
+        </p>
+        <div class="logo">
+            LOGO AQUI
+        </div>
+        <div class="menu">
+            <p class="menu-item">História</p>
+            <p class="menu-item">Nosso Café</p>
+            <p class="menu-item">Coffe tour</p>
+            <p class="menu-item">Cursos</p>
+            <p class="menu-item">Nossa fazenda</p>
+        </div>
+        <div class="perfil">
+            <div class="dropdown">
+                <button class="dropbtn">Entrar/cadastrar</button>
+                <div class="dropdown-content">
+                    <a type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Entrar</a>
+                    <a href="#">cadastrar</a>
+                </div>
+            </div>
+        </div>
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form class="formulario">
-                        <h1 class="titulo-formulario">LOGIN</h1>
-                        <label class="nome-formulario" for="name">E-mail:<E-mail></E-mail></label>
-                        <input onclick="nome()" type="email" id="name" placeholder="Email aqui">
-                        <hr>
-                        <label for="example-email">senha:</label>
-                        <input onclick="email()" type="password" id="password" placeholder="Insira a senha aqui">
-                        <hr>
-                        <input class="btn-success" type="submit" value="Entrar">
-
-                        <a href="http://">esqueceu a senha? <u>clique aqui</u> </a>
-                        <a href="formulario.html">Ainda não é cadastrado? <u>cadastre-se aqui</u> </a>
+                    <form id="form" action="form.json" method="get">
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                            title=" insira seu E-mail" minlength="10" required>
+                        <br>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="password" placeholder="Sua senha"
+                            title="Insira a senha cadastrada" minlength="4" maxlength="10" required>
+                        <br>
+                        <button id="submit" onclick="verify_form()" type="submit"> Entrar</button>
                     </form>
+                    <p class="item-form">Esqueceu a senha? <a href="http://">Recupere aqui</a></p>
+                    <p class="item-form">Ainda não possui uma conta? <a href="http://">Cadastre-se aqui</a></p>
                 </div>
             </div>
+        </div>
 
     </header>
 
-    <!--Banner-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="">
-                    <div id="carouselExampleControls" class="carousel slide img-fluid img-banner" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="image/home-cafe_files/01.NOSSA-FAZENDA.jpg"
-                                    alt="Primeiro Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/home-cafe_files/04.COFFEE-TOUR.png"
-                                    alt="Segundo Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/home-cafe_files/03.NOSSA-LOJA.png"
-                                    alt="Terceiro Slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Próximo</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--mini categorias-->
-    <section>
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                    <img src="image/cafe-moido.png" alt="cafe moido" class="img-categorias">
-                    <p class="categoria-item">CAFÉ MOÍDO</p>
-
-                </div>
-
-                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                    <img src="image/cafe-moido.png" alt=" cafe arabico" class="img-categorias">
-                    <p class="categoria-item">CAFÉ ARÁBICO</p>
-
-                </div>
-                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                    <img src="image/cafe-moido.png" alt="capsulas de cafe" class="img-categorias">
-                    <p class="categoria-item"> CÁPSULAS DE CAFÉ</p>
-
-                </div>
-                <div class="col-sm" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                    <img src="image/cafe-moido.png" alt="cafe em po" class="img-categorias">
-                    <p class="categoria-item">CAFÉ EM PÓ</p>
-
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <div class="espaco"></div>
-    <hr class="linha">
-    <!--sessão principal-->
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h1 class="titulo">VENHA CONHECER NOSSO ESPAÇO</h1>
-                    <p class="descricao">A Loja do Cuesta Cafés Especiais localiza-se em uma das paisagens mais bonitas
-                        do Brasil,
-                        conhecida como Cuesta de Botucatu, mais especificamente no Alto Cuesta, a cerca de 200km da
-                        capital, São Paulo.
+        <section class="banner">
+            <img src="img/04.COFFEE-TOUR.png" class="banner-img" alt="banner do coffe tour">
+        </section>
 
-                        A partir do mirante, os visitantes podem curtir um visual maravilhoso e fazer fotos incríveis
-                        que captam toda a beleza de nossa região, a qualquer hora do dia.
+        <section class="story">
+            <img class="story-item" src="img/1.PLANTIO.jpg" alt="">
+            <img class="story-item" src="img/2.COLHEITA.jpg" alt="">
+            <img class="story-item" src="img/3.SECAGEM.jpg" alt="">
+            <img class="story-item" src="img/4.BENEFICIAMENTO.jpg" alt="">
+        </section>
 
-                        Neste lugar especial, as pessoas podem degustar os cafés especiais do Alto Cuesta, acompanhados
-                        das delícias oferecidas em nosso cardápio.</p>
+        <section class="historia">
+            <div class="container-descricao">
+                <h1 class="historia-titulo">História</h2>
+                    <p class="historia-descricao">Localizada na região do Alto Cuesta, nossa fazenda tem uma
+                        história de cultivo de café que
+                        começou a ser escrita em 1881. Ao longo dos anos, o encontro perfeito entre a
+                        geografia, o
+                        clima e a qualidade do solo, com plantas cuidadosamente selecionadas, resultou no
+                        surgimento
+                        de um autêntico Terroir. Nas edições especiais, Microlote, nas variedades exclusivas
+                        Cereja
+                        e Jasmim, ou ainda no surpreendente Bourbon da região, Cuesta Cafés Especiais
+                        oferece
+                        sabores e aromas que vão transportar você para um dos cenários mais incríveis do
+                        Brasil.
+                        Cuesta Cafés Especiais, desde 1881, o Original do Alto Cuesta.</p>
+            </div>
+            <div class="container-historia">
+                <img class="historia-item" src="img/Rectangle30.svg" alt="origem">
+                <img class="historia-item" src="img/Rectangle31.svg" alt="valores">
+                <img class="historia-item" src="img/Rectangle32.svg" alt="faça parte">
+            </div>
+
+            <div class="item-container">
+                <p>ORIGEM</p>
+                <p>VALORES</p>
+                <p>FAÇA PARTE</p>
+            </div>
+        </section>
+
+        <section class="nosso-cafe">
+            <div class="container-cafe">
+                <h1 class="nosso-cafe-titulo">NOSSO CAFÉ</h1>
+                <p class="nosso-cafe-descricao">Composto de grãos nobres, selecionados artesanalmente,
+                    nossos
+                    cafés especiais podem ser apreciados em três diferentes tipos: Bourbon, Cereja e Jasmim,
+                    além do exclusivo Microlote.</p>
+                <img class="banner-nosso-cafe" src="img/Rectangle33.svg" alt="nosso cafe-banner" width="95%">
+            </div>
+            <div class="nosso-cafe-container">
+                <img class="img-cafe" src="img/Rectangle34.svg" alt=" imagem decorativa" width="50%">
+                <img class="img-cafe" src="img/Rectangle35.svg" alt="imagem decorativa" width="50%">
+            </div>
+
+        </section>
+
+        <section class="coffe-tour">
+            <div class="container-descricao">
+                <h1>COFFER TOUR</h1>
+                <p>O Coffee Tour do Cuesta Cafés Especiais é um programa turístico exclusivo que promove aos
+                    visitantes a oportunidade de conhecer de perto todas as etapas do cultivo de um café
+                    especial, do plantio à xícara.
+
+                    O programa ainda possibilita uma visita única à nossa fazenda histórica São Pedro do
+                    Pardinho, com suas edificações datadas do século XIX.</p>
+            </div>
+
+            <div class="coffe-tour-2">
+                <div class="videos-container">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fitBI1R28vM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-lista">
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/ljMSu2vf3ds"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/fwKcvfkBHWc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/RvIIzpF8a04"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="vantagens-container">
+                    <h2>A visita conta com pautas como:</h2>
+                    <p class="item-lista">1-Trilha pela plantação da fazenda</p>
+                    <p class="item-lista">2-Café da tarde com direto a grãos colhidos na hora</p>
+                    <p class="item-lista">3-Palestra e demonstração de como são preparados os melhores cafés</p>
+                    <p class="item-lista">4-tour por toda a fazenda, do processo da colheita até a xicara da mesa</p>
+                    <p class="item-lista">5-brindes surpresas no final do passeio</p>
+                    <button class="button-vantagens" type="button"> Increva-se</button>
+
+
                 </div>
             </div>
-        </div>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img1.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img2.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img3.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
+        </section>
+
+        <section class="cursos">
+            <h2 class="curso-titulo">CURSOS</h2>
+            <P class="curso-descricao">Workshop de introdução aos cafés de qualidade, de forma prática,
+                preparando nossa linhas de cafés especiais em diversos métodos e com dicas valiosas para
+                extrair o melhor do seu café em casa.
+                Venha conhecer a Fazenda São Pedro do Pardinho, provar nossos cafés e aprender mais sobre
+                uma das bebidas mais consumidas do mundo.</P>
+            <div class="curso-img">
+                <img class="item-curso" src="img/curso1.jpg" alt="imagem ilustrativa do nosso curso">
+                <img class="item-curso" src="img/curso2.jpg" alt="segunda imagem ilustrativa do nosso curso">
+            </div>
+            <div class="curso-info">
 
             </div>
-        </div>
-        <div class="espaco"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img1.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img2.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="text-center">
-                        <img src="image/img3.png" class="rounded" alt="..." width="70%">
-                    </div>
-                </div>
+        </section>
 
-            </div>
-        </div>
-        <hr class="linha">
-        <div class="espaco"></div>
+        <section class="nossa-fazenda">
+            <h2 class="fazenda-titulo">NOSSA FAZENDA</h2>
+            <p class="fazenda-descricao">
+                A Fazenda São Pedro do Pardinho fica numa região linda, conhecida como Cuesta de Botucatu. A
+                região do Pólo Cuesta possui um dos maiores reservatórios de água doce e potável do planeta.
+                Com altitude de 900 a 1050 metros, a região possui clima ameno, com temperatura média anual
+                de 19°C , o qual propicia a produção de café de extrema qualidade. Devido as características
+                da região, a colheita é mais tardia, possibilitando que o fruto absorva o máximo de
+                nutrientes da planta, resultando em uma bebida com característica únicas.
+            </p>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <img src="image/home-cafe_files/03.NOSSA-LOJA.png" class="img-fluid" alt="Imagem responsiva">
-                </div>
-            </div>
-        </div>
+            <img class="fazenda-img" src="img/01.NOSSA-FAZENDA.jpg" alt="Imagem ilustrativa da nossa fazenda">
+            <p>Descricao da fazenda aqui</p>
+            <img class="fazenda-img" src="img/nossa-fazenda2.jpg" alt="segunda imagem ilustrativa da nossa fazenda">
+            <p>descricao da fazenda aqui</p>
 
-        <hr class="linha">
-        <div class="espaco"></div>
+        </section>
 
-        <div class="container-img">
-            <p class="maps-descricao">NOSSO CAFÉ</p>
-            <p>Composto de grãos nobres, selecionados artesanalmente, nossos cafés especiais podem ser apreciados em
-                três diferentes tipos: Bourbon, Cereja e Jasmim, além do exclusivo Microlote.</p>
-            <div class="row-1">
-                <div class="col1">
-                    <div class="img-cafe">
-                        <img class="img-cafe-1" src="image/home-cafe_files/cafe-microlotes.png" alt="">
-                        <p class="descricao-cafe">
-                            - 100% Natural <br>
-                            - Graos selecionados <br>
-                            - Baixa acidez <br>
+        <section class="newlleter">
+            <h3 class="newsletter-titulo">
+                NEWSLETTER
+            </h3>
+            <p class="newsletter-descricao">
+                Cadastre-se para ficar por dentro das novidades do clube, cafes especiais e muito mais da
+                nossa fazenda
+            </p>
+            <input id="newsletter" type="text" placeholder="Receba as novidades no seu e-mail" minlength="10">
+            <button class="bt-new" type="submit"><img src="img/arrow_right_alt_FILL0_wght400_GRAD0_opsz48(1).svg"
+                    alt="imagem ilustrativa para o submit"></button>
+        </section>
 
-                        </p>
-                    </div>
-                </div>
-                <div class="col2-cafe">
-                    <div class="cafe-item">
-                        <img class="col2-img" src="image/home-cafe_files/cafe-bourbon.png" alt="">
-                        <p class="descricao-cafe">
-                            - 100% Natural <br>
-                            - Grãos selecionados <br>
-                            - Baixa acidez <br>
-                        </p>
-                    </div>
-                    <div class="cafe-item">
-                        <img class="col2-img" src="image/home-cafe_files/cafe-cereja.png" alt="">
-                        <p class="descricao-cafe">
-                            - 100% Natural <br>
-                            - Grãos selecionados <br>
-                            - Baixa acidez <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <hr class="linha">
-        <div class="espaco"></div>
-
-        <div class="newlleter">
-            <h2 class="new-item">NEWSLETTER</h2>
-            <p class="new-item">Cadastre-se para ficar por dentro das novidades do clube, <br> cafés especiais e muito
-                mais da nossa
-                fazenda</p>
-            <input type="text" id="search-bar" placeholder="seu E-mail aqui">  <button class="submit" type="submit"><img class="pesquisa-img" src="image/pesquisa 1.svg"
-                alt="search" width="100px" height="50px"> </button>
-        </div>
-
-        <div class="container-maps">
-            <p class="maps-descricao"><a class="a" href="https://goo.gl/maps/YWsURLLbJMXGfmRG8">COMO CHEGAR:</a></p>
-            <iframe class="google-maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.565124736586!2d-48.404848684334695!3d-23.113010051074344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6c1e142d75fd5%3A0x1b8f89808375b1df!2sCuesta%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1661449703614!5m2!1spt-BR!2sbr"
+        <section class="google-maps">
+            <h3 class="maps-titulo">como chegar:</h3>
+            <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.564989869648!2d-48.40484868548045!3d-23.113014984907334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6c1e142d75fd5%3A0x1b8f89808375b1df!2sCuesta%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1665671608316!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contato">
+
         </div>
+        <div class="institucional">
 
-        <hr class="linha">
-        <div class="espaco"></div>
+        </div>
+        <div class="">
 
-        <!--rodape da pagina-->
-        <footer class="footer">
+        </div>
+        <div class="">
 
-            <div class="contato">
-                <h2 class="footer-titulo">CONTATOS</h2>
-                <p class="footer-descricao"><a class="a-f" href="">ATENDIMENTOCUESTA.COM.BR</a></p>
-                <p class="footer-descricao"><a class="a-f" href="">(14)3422-3247</a></p>
-            </div>
+        </div>
+    </footer>
 
-            <div class="institucional">
-                <H2 class="footer-titulo">INSTITUCIONAL</h2>
-                <p class="footer-descricao"><a class="a-f" href="http://">QUEM SOMOS</a></p>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 
-            <div class="suporte">
-                <h2 class="footer-titulo">SUPORTE</h2>
-                <p class="footer-descricao"><a class="a-f" href="">PERGUNTAS FREQUÊNTES</a></p>
-            </div>
-
-            <div class="politicas">
-                <h2 class="footer-titulo">POLÍTICAS</h2>
-                <p class="footer-descricao"><a class="a-f" href="http://">POLÍTICA DE PRIVACIDADE</a></p>
-                <p class="footer-descricao"><a class="a-f" href="http://">TERMOS DE CONSENTIMENTO</a></p>
-                <p class="footer-descricao"><a class="a-f" href="http://">ENTREGA E FRETE</a></p>
-                <p class="footer-descricao"><a class="a-f" href="http://">SEGURANÇA</a></p>
-            </div>
-
-
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
 </body>
 
 </html>
