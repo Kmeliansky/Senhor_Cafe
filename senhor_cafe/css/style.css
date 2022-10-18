@@ -236,9 +236,9 @@ border-radius: 25px;
 
 .item-curso{
   text-align: center;
-  width: 35%;
+  width: 25%;
   height: 500px;
-  margin: auto;
+  margin: 2% auto;
 }
 
 .curso-titulo{
@@ -267,7 +267,7 @@ border-radius: 25px;
 }
 
 .fazenda-img{
-  width: 90%;
+  width: 60%;
   height: 500px;
   margin: 5% auto;
 }
@@ -327,6 +327,7 @@ border-radius: 25px;
 /*maps*/
 .maps-titulo{
   text-align: center;
+  text-decoration: underline;
   text-transform: uppercase;
   color: rgba(66, 33, 25, 1);
   font-weight: 600;
@@ -343,13 +344,30 @@ border-radius: 25px;
 
 .footer{
   background-color: #CEAF96;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  margin-top: 7%;
+  justify-content: space-around;
+}
+
+.item-footer{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+}
+.title-footer{
+  font-size: 26px;
+  margin: 5% auto;
+  text-decoration: underline;
 }
 
 
 
 /* responsividade */
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1200px){
 
     .header{
         background-color: #CEAF96;
@@ -369,4 +387,103 @@ border-radius: 25px;
         display: none;
         width: 100px;
     }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+   
+    }
+
+    .contato, .institucional, .politicas, .suporte{
+      text-align: center;
+      margin: 30px;
+    }
+
+    .container-historia{
+      flex-direction: column;
+      color: rgba(66, 33, 25, 1);
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .historia-item{
+      margin: 2% auto;
+      width: 50%;
+    }
+
+    .item-container{
+      display: none;
+    }
+
+    .banner-site{
+      margin: 5% auto;
+      width: 100%;
+
+    }
+
+    .nosso-cafe-container{
+      display: flex;
+      justify-content: center;
+     
+      flex-direction: column;
+    }
+
+    .img-cafe{
+      width: 90%;
+    }
+
+    .coffe-tour-2{
+      margin: 3%;
+      flex-direction: column;
+    }
+
+    .video-coffe{
+     width: 30%;
+     margin:5% auto;
+    }
+    .video-coffe-home{
+      width: 100%;
+    }
+
+    .curso-img{
+      flex-direction: column;
+    
+    }
+    .item-curso{
+      width: 80%;
+      height: 300px;
+    }
+    
+    .fazenda-img{
+      width: 90%;
+      height: 200px;
+    }
+
+    .newlleter{
+      flex-direction: column;
+    }
+
+    .newsletter-descricao{
+      text-align: center;
+      width: 100%;
+    }
+
+    .mobile-descr{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    #newsletter{
+      margin: 1%;
+      width: 90%;
+    }
+
+    .bt-new{
+     height: 51px;
+      width: 30%;
+    }
+
 }
