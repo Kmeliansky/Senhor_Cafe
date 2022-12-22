@@ -1,24 +1,22 @@
 
 # Senhor Café
 
-Desenvolvimento de um projeto web para uma fazenda e loja ficcticia de café. o tema do website retrata a qualidade da fazenda, o seu espaço para a colheita dando uma imersao maior ao usuario. na parte de seus cafes, o site conta com uma area para mostrar seus melhores cafes e a descricao de cada um.
+O Senhor Café é um website desenvolvido para fins de estudos. ainda está em
+desenvolvimento. Essa aplicação tem como utilizade compartilhar a historia da fazenda,
+seu espaço e destalhes sobre cafes oferecidos.
 
 
-## Screenshots
+## Autores
+
+- [@Kmeliansky](https://github.com/Kmeliansky)
 
 
-
-![App Screenshot](https://i.ibb.co/hfrCmC8/home.png)
-
-
+![App Screenshot](https://i.ibb.co/RvVyt32/Captura-de-tela-de-2022-12-22-16-44-50.png)
 ## Stack utilizada
 
-**Front-end:** Html, Css, Javascript, Bootstrap
+**Front-end:** Html, css, Bootstrap, javascript
 
 **Back-end:** Em breve...
 
-
-## Autor
-
-- [@Kmeliansky](https://github.com/Kmeliansky?tab=repositories)
+**Designe:** Figma, Canvas
 
