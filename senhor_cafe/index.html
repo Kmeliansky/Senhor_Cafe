@@ -5,34 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/formulario.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="js/index.js"></script>
     <title>Senhor Cafe</title>
 </head>
 
 <body class="body">
     <div class="promocoes">
-        <p>ADQUIRA O NOSSO CURSO E GANHE 15% DE DESCONTO EM NOSSOS PRODUTOS</p>
+        <span>ADQUIRA O NOSSO CURSO E GANHE 15% DE DESCONTO EM NOSSOS PRODUTOS</span>
     </div>
 
     <header class="header">
-        <p class="header-mobile">
-            SENHOR CAFÉ
-        </p>
         <div class="logo">
-            LOGO AQUI
+            <img width="200px" src="img/logo-senhor-cafe.svg" alt="logo do site cafe senhor">
         </div>
         <div class="menu">
-            <p class="menu-item">História</p>
-            <p class="menu-item">Nosso Café</p>
-            <p class="menu-item">Coffe tour</p>
-            <p class="menu-item">Cursos</p>
-            <p class="menu-item">Nossa fazenda</p>
+            <a class="menu-item" href="#scrollspyHeading2">História</a>
+            <a class="menu-item" href="#scrollspyHeading2">Nosso Café</a>
+            <a class="menu-item" href="#scrollspyHeading2">Coffe Tour</a>
+            <a class="menu-item" href="#scrollspyHeading2">Cursos</a>
+            <a class="menu-item" href="#scrollspyHeading2">Nossa fazenda</a>
         </div>
+        
         <div class="perfil">
             <div class="dropdown">
                 <button class="dropbtn">Entrar/cadastrar</button>
@@ -42,6 +40,28 @@
                 </div>
             </div>
         </div>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <img src="img/menu-line (1).svg" alt="icone do menu mobile">
+        </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <img src="img/logo-senhor-cafe.svg" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="menu-mobile">
+                        <a class="menu-item" href="#scrollspyHeading2">História</a>
+                        <a class="menu-item" href="#scrollspyHeading2">Nosso Café</a>
+                        <a class="menu-item" href="#scrollspyHeading2">Coffe Tour</a>
+                        <a class="menu-item" href="#scrollspyHeading2">Cursos</a>
+                        <a class="menu-item" href="#scrollspyHeading2">Nossa fazenda</a>
+                        <a class="menu-item" href="#scrollspyHeading2">Entrar/Cadastrar</a>
+
+                    </div>
+                </div>
+            </div>
 
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
@@ -67,20 +87,21 @@
     </header>
 
     <main>
+
         <section class="banner">
-            <img class="banner-site" src="img/04.COFFEE-TOUR.png" class="banner-img" alt="banner do coffe tour">
+            <img src="img/05.MICROLOTE.jpg" class="banner-img" alt="banner do coffe tour">
         </section>
 
         <section class="story">
             <img class="story-item" src="img/1.PLANTIO.jpg" alt="">
             <img class="story-item" src="img/2.COLHEITA.jpg" alt="">
-            <img class="story-item" src="img/2.COLHEITA.jpg" alt="">
+            <img class="story-item" src="img/1.PLANTIO.jpg" alt="">
             <img class="story-item" src="img/4.BENEFICIAMENTO.jpg" alt="">
         </section>
 
         <section class="historia">
             <div class="container-descricao">
-                <h1 class="historia-titulo">História</h2>
+                <span class="titulo">Nossa historia</span>
                     <p class="historia-descricao">Localizada na região do Alto Cuesta, nossa fazenda tem uma
                         história de cultivo de café que
                         começou a ser escrita em 1881. Ao longo dos anos, o encontro perfeito entre a
@@ -96,21 +117,34 @@
                         Cuesta Cafés Especiais, desde 1881, o Original do Alto Cuesta.</p>
             </div>
             <div class="container-historia">
-                <img class="historia-item" src="img/Rectangle30.svg" alt="origem"> ORIGEM
-                <img class="historia-item" src="img/Rectangle31.svg" alt="valores"> VALORES
-                <img class="historia-item" src="img/Rectangle32.svg" alt="faça parte">FAÇA PARTE
+                <div class="content">
+                    <img class="historia-item" src="img/coffe1.jpg" alt="origem">
+                    <details>
+                        <summary>Nossa aréa</summary>
+                        osidfjhiosdfhiodfhiosdfhsdf
+                    </details>
+                </div>
+                <div class="content">
+                    <img class="historia-item" src="img/coffe2.jpg" alt="valores">
+                    <details>
+                        <summary>Valores</summary>
+                        osidfjhiosdfhiodfhiosdfhsdf
+                    </details>
+                </div>
+                <div class="content">
+                    <img class="historia-item" src="img/coffe3.jpg" alt="faça parte">
+                    <details>
+                        <summary>Faça parte</summary>
+                        osidfjhiosdfhiodfhiosdfhsdf
+                    </details>
+                </div>
             </div>
 
-            <div class="item-container">
-                <p>ORIGEM</p>
-                <p>VALORES</p>
-                <p>FAÇA PARTE</p>
-            </div>
         </section>
 
         <section class="nosso-cafe">
-            <div class="container-cafe">
-                <h1 class="nosso-cafe-titulo">NOSSO CAFÉ</h1>
+            <div class="container-descricao">
+                <span class="titulo">Nosso Café</span>
                 <p class="nosso-cafe-descricao">Composto de grãos nobres, selecionados artesanalmente,
                     nossos
                     cafés especiais podem ser apreciados em três diferentes tipos: Bourbon, Cereja e Jasmim,
@@ -126,7 +160,7 @@
 
         <section class="coffe-tour">
             <div class="container-descricao">
-                <h1>COFFER TOUR</h1>
+                <span class="titulo">Coffe tour</span>
                 <p>O Coffee Tour do Cuesta Cafés Especiais é um programa turístico exclusivo que promove aos
                     visitantes a oportunidade de conhecer de perto todas as etapas do cultivo de um café
                     especial, do plantio à xícara.
@@ -134,25 +168,24 @@
                     O programa ainda possibilita uma visita única à nossa fazenda histórica São Pedro do
                     Pardinho, com suas edificações datadas do século XIX.</p>
             </div>
-
             <div class="coffe-tour-2">
                 <div class="videos-container">
                     <div class="video">
-                        <iframe class="video-coffe-home" width="560" height="315" src="https://www.youtube.com/embed/fitBI1R28vM"
+                        <iframe class="video-header" width="560" height="315" src="https://www.youtube.com/embed/fitBI1R28vM"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="video-lista">
-                        <iframe class="video-coffe" width="176" height="152" src="https://www.youtube.com/embed/ljMSu2vf3ds"
+                <div class="video-lista">
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/ljMSu2vf3ds"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <iframe class="video-coffe" width="176" height="152" src="https://www.youtube.com/embed/fwKcvfkBHWc"
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/fwKcvfkBHWc"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <iframe class="video-coffe" width="176" height="152" src="https://www.youtube.com/embed/RvIIzpF8a04"
+                        <iframe width="176" height="152" src="https://www.youtube.com/embed/RvIIzpF8a04"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -165,23 +198,21 @@
                     <p class="item-lista">3-Palestra e demonstração de como são preparados os melhores cafés</p>
                     <p class="item-lista">4-tour por toda a fazenda, do processo da colheita até a xicara da mesa</p>
                     <p class="item-lista">5-brindes surpresas no final do passeio</p>
+                    <p class="item-lista">6-Voucher de desconto para produtos em nosso espaço </p>
                     <button class="button-vantagens" type="button"> Increva-se</button>
-
-
                 </div>
             </div>
         </section>
 
         <section class="cursos">
-            <h2 class="curso-titulo">CURSOS</h2>
+            <span class="titulo">Cursos</span>
             <P class="curso-descricao">Workshop de introdução aos cafés de qualidade, de forma prática,
                 preparando nossa linhas de cafés especiais em diversos métodos e com dicas valiosas para
                 extrair o melhor do seu café em casa.
                 Venha conhecer a Fazenda São Pedro do Pardinho, provar nossos cafés e aprender mais sobre
                 uma das bebidas mais consumidas do mundo.</P>
             <div class="curso-img">
-                <img class="item-curso" src="img/curso1.jpg" alt="imagem ilustrativa do nosso curso">
-                <img class="item-curso" src="img/curso2.jpg" alt="segunda imagem ilustrativa do nosso curso">
+                <video src="videos/gif-cafe.gif"></video>
             </div>
             <div class="curso-info">
 
@@ -189,7 +220,7 @@
         </section>
 
         <section class="nossa-fazenda">
-            <h2 class="fazenda-titulo">NOSSA FAZENDA</h2>
+            <span class="titulo">Nossa Fazenda</span>
             <p class="fazenda-descricao">
                 A Fazenda São Pedro do Pardinho fica numa região linda, conhecida como Cuesta de Botucatu. A
                 região do Pólo Cuesta possui um dos maiores reservatórios de água doce e potável do planeta.
@@ -200,9 +231,9 @@
             </p>
 
             <img class="fazenda-img" src="img/01.NOSSA-FAZENDA.jpg" alt="Imagem ilustrativa da nossa fazenda">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores delectus veniam praesentium odio cum! Voluptatem itaque sit rem dolore, fugit asperiores reiciendis vel deleniti ab magni ea tenetur provident.</p>
+            <p>Descricao da fazenda aqui</p>
             <img class="fazenda-img" src="img/nossa-fazenda2.jpg" alt="segunda imagem ilustrativa da nossa fazenda">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias reiciendis ullam nobis doloribus enim cumque sapiente nam, nemo quos mollitia quis laborum dolor suscipit quibusdam libero. Sint ipsum maiores distinctio?</p>
+            <p>descricao da fazenda aqui</p>
 
         </section>
 
@@ -214,11 +245,9 @@
                 Cadastre-se para ficar por dentro das novidades do clube, cafes especiais e muito mais da
                 nossa fazenda
             </p>
-            <div class="mobile-descr">
             <input id="newsletter" type="text" placeholder="Receba as novidades no seu e-mail" minlength="10">
             <button class="bt-new" type="submit"><img src="img/arrow_right_alt_FILL0_wght400_GRAD0_opsz48(1).svg"
                     alt="imagem ilustrativa para o submit"></button>
-            </div>
         </section>
 
         <section class="google-maps">
@@ -232,43 +261,22 @@
 
     <footer class="footer">
         <div class="contato">
-            <H6 class="title-footer">CONTATO</H6>
-            <a class="item-footer" href="">(14)98122-8218</a>
-            <br>
-            <a class="item-footer" href="">ATENDIMENTOCUESTA.COM.BR</a>
+
         </div>
         <div class="institucional">
-            <H6 class="title-footer">INSTITUCIONAL</H6>
-            <a class="item-footer" href="">QUEM SOMOS</a>
-        </div>
-        <div class="suporte">
-            <H6 class="title-footer">SUPORTE</H6>
-            <a class="item-footer" href="">PERGUNTAS FREQUENTES</a>
-        </div>
-        <div class="politicas">
-            <h6 class="title-footer">POLITICAS</h6>
 
-            <a class="item-footer" href="">POLITICA DE PRIVACIDADE</a>
-            <br>
-            <a class="item-footer" href="">TERMOS DE CONSSENTIMENTO</a>
-            <br>
-            <a class="item-footer" href="">ENTREGA E FRETE</a>
-            <br>
-            <a class="item-footer" href="">SEGURANÇA</a>
-            <br>
+        </div>
+        <div class="">
+
+        </div>
+        <div class="">
+
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>
